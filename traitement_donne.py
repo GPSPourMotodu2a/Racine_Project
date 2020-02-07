@@ -68,6 +68,6 @@ print(Donne)
 
 """
 Problèmes :
-	Peut pas vérifier le code pour invalidé les données en fonction du nombre de GPS (capte pas et pas testé en extérieur)
+	Peut pas vérifier le code pour invalidé les données en fonction du nombre de Satellite (capte pas et pas testé en extérieur)
 """
 
