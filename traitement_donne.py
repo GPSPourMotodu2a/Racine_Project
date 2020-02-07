@@ -28,7 +28,7 @@ NbrSatellite = []
 
 for i in range(len(l)):
 	if CL[i][0] == "$GPVTG":
-		Vitesse.append(CL[i][8])
+		Vitesse.append(CL[i][7])
 
 	elif CL[i][0] == "$GPGGA":
 		Latitude.append(CL[i][2])
@@ -40,8 +40,11 @@ for i in range(len(l)):
 #Ordre des données stoqué // Sauvegarde de ces données
 """
 Donne = [[Vitesse, Latitude, Longitude, Date, Altitude, NbrSatellite],[Vitesse, Latitude, Longitude, Date, Altitude, NbrStallite]]
-
 Date = Année   Mois   Jour   Heure   Minute   Seconde
+Vitesse en Km/H
+Latitude : N
+Longitude : E
+Altitude : m
 """
 
 Donne = []
@@ -64,9 +67,9 @@ except:
 """
 
 
-print(Donne)
+print(l)
 
 """
 Problèmes :
-	Peut pas vérifier le code pour invalidé les données en fonction du nombre de Satellite (capte pas et pas testé en extérieur)
+	Peut pas vérifier le code pour invalidé les données en fonction du nombre de GPS (capte pas et pas testé en extérieur)
 """
